@@ -10,8 +10,7 @@ class Drawerpage extends StatefulWidget {
 class _DrawerpageState extends State<Drawerpage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(
+    return Drawer(
           backgroundColor: Colors.white,
           child: SafeArea(
             child: Padding(
@@ -57,8 +56,6 @@ class _DrawerpageState extends State<Drawerpage> {
               ),
             ),
           ),
-        ),
-
     );
   }
 }
