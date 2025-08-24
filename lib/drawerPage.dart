@@ -16,7 +16,8 @@ class _DrawerpageState extends State<Drawerpage> {
           child: SafeArea(
             child: Padding(
               padding: EdgeInsets.all(22),
-              child: ListView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Row(
                     children: [

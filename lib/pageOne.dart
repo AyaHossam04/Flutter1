@@ -55,8 +55,8 @@ List<String> cities = ["Cairo", "Alexandria", "Ismailia","Porsaid"];
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Recommended", style: TextStyle(fontWeight: FontWeight.bold),),
-                Text("See all", style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold)),
+                Text("Recommended", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+                Text("See all", style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold, fontSize: 20)),
             ],),
           ),
           SizedBox(height: 16),
