@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'home.dart';
-import 'test.dart';
+// import 'test.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
 
   // @override
   // Widget build(BuildContext context) {
-  //   return MaterialApp(home: const HomePage());
+  //   return MaterialApp(home: const TestPage());
   // }
 
     @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const TestPage());
+    return MaterialApp(home: const HomePage());
   }
 
 }
