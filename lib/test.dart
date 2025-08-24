@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/drawerPage.dart';
+// import 'package:flutter_application_1/drawerPage.dart';
 import 'package:flutter_application_1/pageOne.dart';
 
 class TestPage extends StatefulWidget {
@@ -13,10 +13,10 @@ class _MyWidgetState extends State<TestPage> {
 
   int currentIndex =0 ;
   List <Widget> pages = [
-    PageOne(),
     Center(
-      child: Text("Page 2", style: TextStyle(fontSize: 40)),
+      child: Text("Page 1", style: TextStyle(fontSize: 40)),
     ),
+    PageOne(),
     Center(
       child: Text("Page 3", style: TextStyle(fontSize: 40)),
     ),
@@ -62,53 +62,53 @@ class _MyWidgetState extends State<TestPage> {
         ),
 
         //DRAWER
-        drawer: Drawerpage(),
-        // drawer: Drawer(
-        //   backgroundColor: Colors.white,
-        //   child: SafeArea(
-        //     child: Padding(
-        //       padding: EdgeInsets.all(22),
-        //       child: ListView(
-        //         children: [
-        //           Row(
-        //             children: [
-        //               Container(
-        //                 width: 50,
-        //                 height: 50,
-        //                 decoration: BoxDecoration(
-        //                   shape: BoxShape.circle,
-        //                   color: const Color.fromARGB(255, 104, 99, 99),
-        //                 ),
-        //               ),
-        //             Expanded(child: ListTile(
-        //               title: Text("Aya Hossam Eldien"),
-        //               subtitle: Text("Aya@icloud.com",
-        //               style: TextStyle(color: Colors.grey),),
-        //             ),)
-        //             ],
-        //           ),
-        //           SizedBox(height: 10,),
-        //           Divider(),
-        //           ListTile(
-        //             leading:Icon(Icons.person),
-        //             title: Text("Profile"),
-        //             onTap: (){},
-        //           ),
-        //           ListTile(
-        //             leading:Icon(Icons.home),
-        //             title: Text("Home"),
-        //             onTap: (){},
-        //           ),
-        //           ListTile(
-        //             leading:Icon(Icons.settings),
-        //             title: Text("Settings"),
-        //             onTap: (){},
-        //           ),
-        //         ],
-        //       ),
-        //     ),
-        //   ),
-        // ),
+        // drawer: Drawerpage(),
+        drawer: Drawer(
+          backgroundColor: Colors.white,
+          child: SafeArea(
+            child: Padding(
+              padding: EdgeInsets.all(22),
+              child: ListView(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: const Color.fromARGB(255, 104, 99, 99),
+                        ),
+                      ),
+                    Expanded(child: ListTile(
+                      title: Text("Aya Hossam Eldien"),
+                      subtitle: Text("Aya@icloud.com",
+                      style: TextStyle(color: Colors.grey),),
+                    ),)
+                    ],
+                  ),
+                  SizedBox(height: 10,),
+                  Divider(),
+                  ListTile(
+                    leading:Icon(Icons.person),
+                    title: Text("Profile"),
+                    onTap: (){},
+                  ),
+                  ListTile(
+                    leading:Icon(Icons.home),
+                    title: Text("Home"),
+                    onTap: (){},
+                  ),
+                  ListTile(
+                    leading:Icon(Icons.settings),
+                    title: Text("Settings"),
+                    onTap: (){},
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
 
         //BOTTOM NAVAGATION BAR
         bottomNavigationBar: BottomNavigationBar(
