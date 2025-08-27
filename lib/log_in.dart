@@ -85,6 +85,7 @@ class _LogInPageState extends State<LogInPage> {
                         ),
                         suffixIcon: Icon(Icons.visibility, color: Colors.grey,),
                       ),
+                      obscureText: true,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 15),
